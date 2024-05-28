@@ -1,6 +1,7 @@
 #include "DeviceA.h"
 #include "DeviceB.h"
 
+
 #include <gtest/gtest.h>
 
 TEST(DeviceA, GetNameTest)

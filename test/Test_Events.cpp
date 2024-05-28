@@ -1,7 +1,6 @@
 #include "StartedEvent.h"
-#include "DataEvent.h"
 #include "WorkDoneEvent.h"
-
+#include "DataEvent.h"
 #include "DeviceA.h"
 #include "DeviceB.h"
 

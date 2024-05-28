@@ -2,8 +2,8 @@
 
 #include "DeviceA.h"
 #include "DeviceB.h"
-
-#include "C:\Users\danii\Desktop\my_project\src\parallel_executor\Parser.h"
+#include "src/Parser.h"  
+#include "Event.h"
 
 #include <gtest/gtest.h>
 
