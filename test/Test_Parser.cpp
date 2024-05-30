@@ -2,7 +2,7 @@
 
 #include "DeviceA.h"
 #include "DeviceB.h"
-#include "src/Parser.h"  
+#include "Parser.h"  
 #include "Event.h"
 
 #include <gtest/gtest.h>
