@@ -1,0 +1,2 @@
+C:\msys64\ucrt64\bin\ar.exe qc libparallel_executor.a CMakeFiles/parallel_executor.dir/DeviceA.cpp.obj CMakeFiles/parallel_executor.dir/DeviceB.cpp.obj CMakeFiles/parallel_executor.dir/EventQueue.cpp.obj CMakeFiles/parallel_executor.dir/StartedEvent.cpp.obj CMakeFiles/parallel_executor.dir/WorkDoneEvent.cpp.obj CMakeFiles/parallel_executor.dir/DataEvent.cpp.obj CMakeFiles/parallel_executor.dir/Parser.cpp.obj
+C:\msys64\ucrt64\bin\ranlib.exe libparallel_executor.a

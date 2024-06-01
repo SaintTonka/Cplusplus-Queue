@@ -3,13 +3,11 @@
 
 #include "DeviceEvent.h"
 
-class StartedEvent : public DeviceEvent {
+class StartedEvent : public DeviceEvent
+{
 public:
-    StartedEvent(const std::shared_ptr<const Device>& device) : DeviceEvent(device) {}
-
-    std::string toString() const override {
-        return "StartedEvent from " + getDevice()->getName();
-    }
+  StartedEvent(std::shared_ptr<Device> device);
+  std::string toString() const override;
 };
 
-#endif // STARTEDEVENT_H
+#endif

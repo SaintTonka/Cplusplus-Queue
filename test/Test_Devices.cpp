@@ -4,6 +4,7 @@
 
 #include <gtest/gtest.h>
 
+
 TEST(DeviceA, GetNameTest)
 {
   DeviceA device;

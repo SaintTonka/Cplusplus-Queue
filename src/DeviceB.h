@@ -2,22 +2,12 @@
 #define DEVICEB_H
 
 #include "Device.h"
-#include <thread>
-#include <chrono>
-#include <sstream>
 
-class DeviceB : public Device {
+class DeviceB : public Device
+{
 public:
-    std::string getName() const override {  // Marked as const
-        return "DeviceB";
-    }
-
-    std::string getDataAsString() override {
-        std::this_thread::sleep_for(std::chrono::seconds(5));
-        std::stringstream ss;
-        ss << rand() % 199 << "," << rand() % 199 << "," << rand() % 199;
-        return ss.str();
-    }
+  std::string getName() const override;
+  std::string getDataAsString() override;
 };
 
-#endif // DEVICEB_H
+#endif

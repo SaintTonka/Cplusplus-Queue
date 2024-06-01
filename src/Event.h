@@ -3,10 +3,17 @@
 
 #include <string>
 
-class Event {
+class Event
+{
 public:
-    virtual ~Event() = default;
-    virtual std::string toString() const = 0;
+  virtual ~Event() {}
+
+  /*!
+   * \brief Возвращает сообщение, соответствующее событию.
+   *
+   * \return Строка, которая содержит информацию о событии.
+  */
+  virtual std::string toString() const = 0;
 };
 
-#endif // EVENT_H
+#endif

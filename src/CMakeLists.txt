@@ -1,9 +1,9 @@
-add_executable(my_project ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-                         ${CMAKE_CURRENT_SOURCE_DIR}/EventQueue.cpp)
+cmake_minimum_required(VERSION 3.10)
 
-target_link_libraries(my_project
-    
+
+add_library(my_project INTERFACE) 
+
+
+target_include_directories(my_project INTERFACE
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
-
-
-
