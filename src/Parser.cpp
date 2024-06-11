@@ -22,7 +22,7 @@ void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, in
       std::cout << "No events received for 5 seconds. Exiting..." << std::endl;
       break;
     }
-    //  Используем static_pointer_cast 
+    
     if (auto startedEvent = std::static_pointer_cast<const StartedEvent>(event)) { 
       std::cout << startedEvent->toString() << std::endl;
     }

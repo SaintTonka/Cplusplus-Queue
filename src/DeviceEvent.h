@@ -7,7 +7,7 @@
 
 class DeviceEvent : public Event {
 public:
-    DeviceEvent(const std::shared_ptr<const Device>& device);  //  Исправлено
+    DeviceEvent(const std::shared_ptr<const Device>& device); 
     std::shared_ptr<const Device> getDevice() const { return device; }
 
 private:
