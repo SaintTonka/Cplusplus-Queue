@@ -3,11 +3,10 @@
 
 #include "Device.h"
 
-class DeviceB : public Device
-{
+class DeviceB : public Device {
 public:
-  std::string getName() const override;
-  std::string getDataAsString() override;
+    std::string getName() const override;
+    std::string getDataAsString() override;
 };
 
-#endif
+#endif 

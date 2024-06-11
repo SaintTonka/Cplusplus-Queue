@@ -14,6 +14,7 @@
 class EventQueue
 {
 public:
+  EventQueue();
   void push(const std::shared_ptr<const Event> & event);
   std::shared_ptr<const Event> pop(const std::chrono::seconds & duration);
 

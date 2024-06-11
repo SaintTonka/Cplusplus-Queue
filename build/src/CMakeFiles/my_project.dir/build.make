@@ -68,36 +68,174 @@ include src/CMakeFiles/my_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/my_project.dir/flags.make
 
-src/CMakeFiles/my_project.dir/main.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
-src/CMakeFiles/my_project.dir/main.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/main.cpp
-src/CMakeFiles/my_project.dir/main.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/my_project.dir/main.cpp.obj"
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/main.cpp.obj -MF CMakeFiles\my_project.dir\main.cpp.obj.d -o CMakeFiles\my_project.dir\main.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\main.cpp
+src/CMakeFiles/my_project.dir/Device.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/Device.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/Device.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/Device.cpp
+src/CMakeFiles/my_project.dir/Device.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/my_project.dir/Device.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/Device.cpp.obj -MF CMakeFiles\my_project.dir\Device.cpp.obj.d -o CMakeFiles\my_project.dir\Device.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\Device.cpp
 
-src/CMakeFiles/my_project.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/main.cpp.i"
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\main.cpp > CMakeFiles\my_project.dir\main.cpp.i
+src/CMakeFiles/my_project.dir/Device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/Device.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\Device.cpp > CMakeFiles\my_project.dir\Device.cpp.i
 
-src/CMakeFiles/my_project.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/main.cpp.s"
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\main.cpp -o CMakeFiles\my_project.dir\main.cpp.s
+src/CMakeFiles/my_project.dir/Device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/Device.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\Device.cpp -o CMakeFiles\my_project.dir\Device.cpp.s
+
+src/CMakeFiles/my_project.dir/DeviceA.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/DeviceA.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/DeviceA.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/DeviceA.cpp
+src/CMakeFiles/my_project.dir/DeviceA.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/my_project.dir/DeviceA.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/DeviceA.cpp.obj -MF CMakeFiles\my_project.dir\DeviceA.cpp.obj.d -o CMakeFiles\my_project.dir\DeviceA.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceA.cpp
+
+src/CMakeFiles/my_project.dir/DeviceA.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/DeviceA.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceA.cpp > CMakeFiles\my_project.dir\DeviceA.cpp.i
+
+src/CMakeFiles/my_project.dir/DeviceA.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/DeviceA.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceA.cpp -o CMakeFiles\my_project.dir\DeviceA.cpp.s
+
+src/CMakeFiles/my_project.dir/DeviceB.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/DeviceB.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/DeviceB.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/DeviceB.cpp
+src/CMakeFiles/my_project.dir/DeviceB.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/my_project.dir/DeviceB.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/DeviceB.cpp.obj -MF CMakeFiles\my_project.dir\DeviceB.cpp.obj.d -o CMakeFiles\my_project.dir\DeviceB.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceB.cpp
+
+src/CMakeFiles/my_project.dir/DeviceB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/DeviceB.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceB.cpp > CMakeFiles\my_project.dir\DeviceB.cpp.i
+
+src/CMakeFiles/my_project.dir/DeviceB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/DeviceB.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceB.cpp -o CMakeFiles\my_project.dir\DeviceB.cpp.s
+
+src/CMakeFiles/my_project.dir/EventQueue.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/EventQueue.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/EventQueue.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/EventQueue.cpp
+src/CMakeFiles/my_project.dir/EventQueue.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/my_project.dir/EventQueue.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/EventQueue.cpp.obj -MF CMakeFiles\my_project.dir\EventQueue.cpp.obj.d -o CMakeFiles\my_project.dir\EventQueue.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\EventQueue.cpp
+
+src/CMakeFiles/my_project.dir/EventQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/EventQueue.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\EventQueue.cpp > CMakeFiles\my_project.dir\EventQueue.cpp.i
+
+src/CMakeFiles/my_project.dir/EventQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/EventQueue.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\EventQueue.cpp -o CMakeFiles\my_project.dir\EventQueue.cpp.s
+
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/StartedEvent.cpp
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj -MF CMakeFiles\my_project.dir\StartedEvent.cpp.obj.d -o CMakeFiles\my_project.dir\StartedEvent.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\StartedEvent.cpp
+
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/StartedEvent.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\StartedEvent.cpp > CMakeFiles\my_project.dir\StartedEvent.cpp.i
+
+src/CMakeFiles/my_project.dir/StartedEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/StartedEvent.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\StartedEvent.cpp -o CMakeFiles\my_project.dir\StartedEvent.cpp.s
+
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/DeviceEvent.cpp
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj -MF CMakeFiles\my_project.dir\DeviceEvent.cpp.obj.d -o CMakeFiles\my_project.dir\DeviceEvent.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceEvent.cpp
+
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/DeviceEvent.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceEvent.cpp > CMakeFiles\my_project.dir\DeviceEvent.cpp.i
+
+src/CMakeFiles/my_project.dir/DeviceEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/DeviceEvent.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\DeviceEvent.cpp -o CMakeFiles\my_project.dir\DeviceEvent.cpp.s
+
+src/CMakeFiles/my_project.dir/DataEvent.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/DataEvent.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/DataEvent.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/DataEvent.cpp
+src/CMakeFiles/my_project.dir/DataEvent.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/my_project.dir/DataEvent.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/DataEvent.cpp.obj -MF CMakeFiles\my_project.dir\DataEvent.cpp.obj.d -o CMakeFiles\my_project.dir\DataEvent.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\DataEvent.cpp
+
+src/CMakeFiles/my_project.dir/DataEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/DataEvent.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\DataEvent.cpp > CMakeFiles\my_project.dir\DataEvent.cpp.i
+
+src/CMakeFiles/my_project.dir/DataEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/DataEvent.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\DataEvent.cpp -o CMakeFiles\my_project.dir\DataEvent.cpp.s
+
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/WorkDoneEvent.cpp
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj -MF CMakeFiles\my_project.dir\WorkDoneEvent.cpp.obj.d -o CMakeFiles\my_project.dir\WorkDoneEvent.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\WorkDoneEvent.cpp
+
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/WorkDoneEvent.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\WorkDoneEvent.cpp > CMakeFiles\my_project.dir\WorkDoneEvent.cpp.i
+
+src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/WorkDoneEvent.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\WorkDoneEvent.cpp -o CMakeFiles\my_project.dir\WorkDoneEvent.cpp.s
+
+src/CMakeFiles/my_project.dir/Parser.cpp.obj: src/CMakeFiles/my_project.dir/flags.make
+src/CMakeFiles/my_project.dir/Parser.cpp.obj: src/CMakeFiles/my_project.dir/includes_CXX.rsp
+src/CMakeFiles/my_project.dir/Parser.cpp.obj: C:/Users/danii/Desktop/Cplusplus-Queue/src/Parser.cpp
+src/CMakeFiles/my_project.dir/Parser.cpp.obj: src/CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/my_project.dir/Parser.cpp.obj"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/my_project.dir/Parser.cpp.obj -MF CMakeFiles\my_project.dir\Parser.cpp.obj.d -o CMakeFiles\my_project.dir\Parser.cpp.obj -c C:\Users\danii\Desktop\Cplusplus-Queue\src\Parser.cpp
+
+src/CMakeFiles/my_project.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/Parser.cpp.i"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\danii\Desktop\Cplusplus-Queue\src\Parser.cpp > CMakeFiles\my_project.dir\Parser.cpp.i
+
+src/CMakeFiles/my_project.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/Parser.cpp.s"
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\danii\Desktop\Cplusplus-Queue\src\Parser.cpp -o CMakeFiles\my_project.dir\Parser.cpp.s
 
 # Object files for target my_project
 my_project_OBJECTS = \
-"CMakeFiles/my_project.dir/main.cpp.obj"
+"CMakeFiles/my_project.dir/Device.cpp.obj" \
+"CMakeFiles/my_project.dir/DeviceA.cpp.obj" \
+"CMakeFiles/my_project.dir/DeviceB.cpp.obj" \
+"CMakeFiles/my_project.dir/EventQueue.cpp.obj" \
+"CMakeFiles/my_project.dir/StartedEvent.cpp.obj" \
+"CMakeFiles/my_project.dir/DeviceEvent.cpp.obj" \
+"CMakeFiles/my_project.dir/DataEvent.cpp.obj" \
+"CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj" \
+"CMakeFiles/my_project.dir/Parser.cpp.obj"
 
 # External object files for target my_project
 my_project_EXTERNAL_OBJECTS =
 
-src/libmy_project.a: src/CMakeFiles/my_project.dir/main.cpp.obj
-src/libmy_project.a: src/CMakeFiles/my_project.dir/build.make
-src/libmy_project.a: src/CMakeFiles/my_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmy_project.a"
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && $(CMAKE_COMMAND) -P CMakeFiles\my_project.dir\cmake_clean_target.cmake
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/Device.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/DeviceA.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/DeviceB.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/EventQueue.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/DataEvent.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/Parser.cpp.obj
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/build.make
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/linkLibs.rsp
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/objects1.rsp
+src/libmy_project.dll: src/CMakeFiles/my_project.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\danii\Desktop\Cplusplus-Queue\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library libmy_project.dll"
 	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-src/CMakeFiles/my_project.dir/build: src/libmy_project.a
+src/CMakeFiles/my_project.dir/build: src/libmy_project.dll
 .PHONY : src/CMakeFiles/my_project.dir/build
 
 src/CMakeFiles/my_project.dir/clean:

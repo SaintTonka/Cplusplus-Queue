@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.16)
 project(my_project)
 
@@ -8,6 +7,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 enable_testing()
 
-
 add_subdirectory(src)
+add_subdirectory(googletest)  
 add_subdirectory(test)

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\DeviceATest.cpp.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\DeviceATest.cpp.dir/objects.a @CMakeFiles\DeviceATest.cpp.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\DeviceATest.cpp.dir/objects.a -Wl,--no-whole-archive -o DeviceATest.cpp.exe -Wl,--out-implib,libDeviceATest.cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DeviceATest.cpp.dir\linkLibs.rsp

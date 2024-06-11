@@ -96,7 +96,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -170,6 +170,236 @@ depend:
 	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/my_project.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/my_project.dir/rule
+.PHONY : src/CMakeFiles/my_project.dir/rule
+
+# Convenience name for target.
+my_project: src/CMakeFiles/my_project.dir/rule
+.PHONY : my_project
+
+# fast build rule for target.
+my_project/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/build
+.PHONY : my_project/fast
+
+DataEvent.obj: DataEvent.cpp.obj
+.PHONY : DataEvent.obj
+
+# target to build an object file
+DataEvent.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DataEvent.cpp.obj
+.PHONY : DataEvent.cpp.obj
+
+DataEvent.i: DataEvent.cpp.i
+.PHONY : DataEvent.i
+
+# target to preprocess a source file
+DataEvent.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DataEvent.cpp.i
+.PHONY : DataEvent.cpp.i
+
+DataEvent.s: DataEvent.cpp.s
+.PHONY : DataEvent.s
+
+# target to generate assembly for a file
+DataEvent.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DataEvent.cpp.s
+.PHONY : DataEvent.cpp.s
+
+Device.obj: Device.cpp.obj
+.PHONY : Device.obj
+
+# target to build an object file
+Device.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Device.cpp.obj
+.PHONY : Device.cpp.obj
+
+Device.i: Device.cpp.i
+.PHONY : Device.i
+
+# target to preprocess a source file
+Device.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Device.cpp.i
+.PHONY : Device.cpp.i
+
+Device.s: Device.cpp.s
+.PHONY : Device.s
+
+# target to generate assembly for a file
+Device.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Device.cpp.s
+.PHONY : Device.cpp.s
+
+DeviceA.obj: DeviceA.cpp.obj
+.PHONY : DeviceA.obj
+
+# target to build an object file
+DeviceA.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceA.cpp.obj
+.PHONY : DeviceA.cpp.obj
+
+DeviceA.i: DeviceA.cpp.i
+.PHONY : DeviceA.i
+
+# target to preprocess a source file
+DeviceA.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceA.cpp.i
+.PHONY : DeviceA.cpp.i
+
+DeviceA.s: DeviceA.cpp.s
+.PHONY : DeviceA.s
+
+# target to generate assembly for a file
+DeviceA.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceA.cpp.s
+.PHONY : DeviceA.cpp.s
+
+DeviceB.obj: DeviceB.cpp.obj
+.PHONY : DeviceB.obj
+
+# target to build an object file
+DeviceB.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceB.cpp.obj
+.PHONY : DeviceB.cpp.obj
+
+DeviceB.i: DeviceB.cpp.i
+.PHONY : DeviceB.i
+
+# target to preprocess a source file
+DeviceB.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceB.cpp.i
+.PHONY : DeviceB.cpp.i
+
+DeviceB.s: DeviceB.cpp.s
+.PHONY : DeviceB.s
+
+# target to generate assembly for a file
+DeviceB.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceB.cpp.s
+.PHONY : DeviceB.cpp.s
+
+DeviceEvent.obj: DeviceEvent.cpp.obj
+.PHONY : DeviceEvent.obj
+
+# target to build an object file
+DeviceEvent.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceEvent.cpp.obj
+.PHONY : DeviceEvent.cpp.obj
+
+DeviceEvent.i: DeviceEvent.cpp.i
+.PHONY : DeviceEvent.i
+
+# target to preprocess a source file
+DeviceEvent.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceEvent.cpp.i
+.PHONY : DeviceEvent.cpp.i
+
+DeviceEvent.s: DeviceEvent.cpp.s
+.PHONY : DeviceEvent.s
+
+# target to generate assembly for a file
+DeviceEvent.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/DeviceEvent.cpp.s
+.PHONY : DeviceEvent.cpp.s
+
+EventQueue.obj: EventQueue.cpp.obj
+.PHONY : EventQueue.obj
+
+# target to build an object file
+EventQueue.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/EventQueue.cpp.obj
+.PHONY : EventQueue.cpp.obj
+
+EventQueue.i: EventQueue.cpp.i
+.PHONY : EventQueue.i
+
+# target to preprocess a source file
+EventQueue.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/EventQueue.cpp.i
+.PHONY : EventQueue.cpp.i
+
+EventQueue.s: EventQueue.cpp.s
+.PHONY : EventQueue.s
+
+# target to generate assembly for a file
+EventQueue.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/EventQueue.cpp.s
+.PHONY : EventQueue.cpp.s
+
+Parser.obj: Parser.cpp.obj
+.PHONY : Parser.obj
+
+# target to build an object file
+Parser.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Parser.cpp.obj
+.PHONY : Parser.cpp.obj
+
+Parser.i: Parser.cpp.i
+.PHONY : Parser.i
+
+# target to preprocess a source file
+Parser.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Parser.cpp.i
+.PHONY : Parser.cpp.i
+
+Parser.s: Parser.cpp.s
+.PHONY : Parser.s
+
+# target to generate assembly for a file
+Parser.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/Parser.cpp.s
+.PHONY : Parser.cpp.s
+
+StartedEvent.obj: StartedEvent.cpp.obj
+.PHONY : StartedEvent.obj
+
+# target to build an object file
+StartedEvent.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/StartedEvent.cpp.obj
+.PHONY : StartedEvent.cpp.obj
+
+StartedEvent.i: StartedEvent.cpp.i
+.PHONY : StartedEvent.i
+
+# target to preprocess a source file
+StartedEvent.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/StartedEvent.cpp.i
+.PHONY : StartedEvent.cpp.i
+
+StartedEvent.s: StartedEvent.cpp.s
+.PHONY : StartedEvent.s
+
+# target to generate assembly for a file
+StartedEvent.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/StartedEvent.cpp.s
+.PHONY : StartedEvent.cpp.s
+
+WorkDoneEvent.obj: WorkDoneEvent.cpp.obj
+.PHONY : WorkDoneEvent.obj
+
+# target to build an object file
+WorkDoneEvent.cpp.obj:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.obj
+.PHONY : WorkDoneEvent.cpp.obj
+
+WorkDoneEvent.i: WorkDoneEvent.cpp.i
+.PHONY : WorkDoneEvent.i
+
+# target to preprocess a source file
+WorkDoneEvent.cpp.i:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.i
+.PHONY : WorkDoneEvent.cpp.i
+
+WorkDoneEvent.s: WorkDoneEvent.cpp.s
+.PHONY : WorkDoneEvent.s
+
+# target to generate assembly for a file
+WorkDoneEvent.cpp.s:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/WorkDoneEvent.cpp.s
+.PHONY : WorkDoneEvent.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -183,6 +413,34 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... my_project
+	@echo ... DataEvent.obj
+	@echo ... DataEvent.i
+	@echo ... DataEvent.s
+	@echo ... Device.obj
+	@echo ... Device.i
+	@echo ... Device.s
+	@echo ... DeviceA.obj
+	@echo ... DeviceA.i
+	@echo ... DeviceA.s
+	@echo ... DeviceB.obj
+	@echo ... DeviceB.i
+	@echo ... DeviceB.s
+	@echo ... DeviceEvent.obj
+	@echo ... DeviceEvent.i
+	@echo ... DeviceEvent.s
+	@echo ... EventQueue.obj
+	@echo ... EventQueue.i
+	@echo ... EventQueue.s
+	@echo ... Parser.obj
+	@echo ... Parser.i
+	@echo ... Parser.s
+	@echo ... StartedEvent.obj
+	@echo ... StartedEvent.i
+	@echo ... StartedEvent.s
+	@echo ... WorkDoneEvent.obj
+	@echo ... WorkDoneEvent.i
+	@echo ... WorkDoneEvent.s
 .PHONY : help
 
 

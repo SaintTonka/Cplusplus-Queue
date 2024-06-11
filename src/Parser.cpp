@@ -19,17 +19,18 @@ void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, in
   while (true) {
     auto event = queue->pop(std::chrono::seconds(5));
     if (event == nullptr) {
-      cout << "No events received for 5 seconds. Exiting..." << endl;
+      std::cout << "No events received for 5 seconds. Exiting..." << std::endl;
       break;
     }
-    if (auto startedEvent = std::dynamic_pointer_cast<StartedEvent>(event)) {
-      cout << startedEvent->toString() << endl;
+    //  Используем static_pointer_cast 
+    if (auto startedEvent = std::static_pointer_cast<const StartedEvent>(event)) { 
+      std::cout << startedEvent->toString() << std::endl;
     }
-    if (auto dataEvent = std::dynamic_pointer_cast<DataEvent>(event)) {
-      cout << dataEvent->toString() << endl;
+    if (auto dataEvent = std::static_pointer_cast<const DataEvent>(event)) { 
+      std::cout << dataEvent->toString() << std::endl;
     }
-    if (auto workDoneEvent = std::dynamic_pointer_cast<WorkDoneEvent>(event)) {
-      cout << workDoneEvent->toString() << endl;
+    if (auto workDoneEvent = std::static_pointer_cast<const WorkDoneEvent>(event)) { 
+      std::cout << workDoneEvent->toString() << std::endl;
       if (workDoneEvent->getDevice()->getName() == "DeviceA" && loop_count_A > 0) {
         loop_count_A--;
       } else if (workDoneEvent->getDevice()->getName() == "DeviceB" && loop_count_B > 0) {

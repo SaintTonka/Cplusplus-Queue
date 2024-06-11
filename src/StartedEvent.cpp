@@ -1,7 +1,7 @@
 #include "StartedEvent.h"
 
-StartedEvent::StartedEvent(std::shared_ptr<Device> device) : DeviceEvent(device) {}
+StartedEvent::StartedEvent(const std::shared_ptr<const Device>& device) : DeviceEvent(device) {}  // Исправлено
 
 std::string StartedEvent::toString() const {
-  return "StartedEvent: Device: " + getDevice()->getName();
+    return "StartedEvent: Device: " + getDevice()->getName();
 }

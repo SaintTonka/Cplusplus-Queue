@@ -1,0 +1,98 @@
+Start testing: Jun 11 16:19 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/5 Testing: DeviceATest.cpp
+1/5 Test: DeviceATest.cpp
+Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceATest.cpp.exe"
+Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
+"DeviceATest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DeviceATest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
+"DeviceATest.cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: DeviceBTest.cpp
+2/5 Test: DeviceBTest.cpp
+Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceBTest.cpp.exe"
+Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
+"DeviceBTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DeviceBTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
+"DeviceBTest.cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: EventQueueTest.cpp
+3/5 Test: EventQueueTest.cpp
+Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventQueueTest.cpp.exe"
+Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
+"EventQueueTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventQueueTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
+"EventQueueTest.cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: EventsTest.cpp
+4/5 Test: EventsTest.cpp
+Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventsTest.cpp.exe"
+Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
+"EventsTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventsTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
+"EventsTest.cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: ParserTest.cpp
+5/5 Test: ParserTest.cpp
+Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/ParserTest.cpp.exe"
+Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
+"ParserTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ParserTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
+"ParserTest.cpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 11 16:19 RTZ 2 (çèìà)

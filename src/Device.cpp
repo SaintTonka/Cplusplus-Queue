@@ -1,3 +1,3 @@
 #include "Device.h"
 
-Device::~Device() {}
+// Реализация деструктора 

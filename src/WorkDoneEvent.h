@@ -3,11 +3,10 @@
 
 #include "DeviceEvent.h"
 
-class WorkDoneEvent : public DeviceEvent
-{
+class WorkDoneEvent : public DeviceEvent {
 public:
-  WorkDoneEvent(std::shared_ptr<Device> device);
-  std::string toString() const override;
+    WorkDoneEvent(const std::shared_ptr<const Device>& device); 
+    std::string toString() const override;
 };
 
-#endif
+#endif 

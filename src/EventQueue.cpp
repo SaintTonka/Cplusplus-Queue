@@ -4,7 +4,7 @@
 #include <mutex>
 #include <condition_variable>
 
-EventQueue::EventQueue() {}
+EventQueue::EventQueue() : queue(), mutex(), cv() {} 
 
 void EventQueue::push(const std::shared_ptr<const Event>& event) {
   std::lock_guard<std::mutex> lock(mutex);

@@ -4,12 +4,13 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(Test_Devices "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/Test_Devices.exe")
-set_tests_properties(Test_Devices PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;30;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
-add_test(Test_EventQueue "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/Test_EventQueue.exe")
-set_tests_properties(Test_EventQueue PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;31;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
-add_test(Test_Events "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/Test_Events.exe")
-set_tests_properties(Test_Events PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;32;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
-add_test(Test_Parser "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/Test_Parser.exe")
-set_tests_properties(Test_Parser PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;33;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
-subdirs("../_deps/googletest-build")
+add_test(DeviceATest.cpp "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceATest.cpp.exe")
+set_tests_properties(DeviceATest.cpp PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;23;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
+add_test(DeviceBTest.cpp "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceBTest.cpp.exe")
+set_tests_properties(DeviceBTest.cpp PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;23;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
+add_test(EventQueueTest.cpp "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventQueueTest.cpp.exe")
+set_tests_properties(EventQueueTest.cpp PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;23;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
+add_test(EventsTest.cpp "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventsTest.cpp.exe")
+set_tests_properties(EventsTest.cpp PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;23;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")
+add_test(ParserTest.cpp "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/ParserTest.cpp.exe")
+set_tests_properties(ParserTest.cpp PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;23;add_test;C:/Users/danii/Desktop/Cplusplus-Queue/test/CMakeLists.txt;0;")

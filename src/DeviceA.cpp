@@ -1,16 +1,13 @@
-
-#ifndef DEVICEA_H
-#define DEVICEA_H
-
-#include "Device.h"
+#include "DeviceA.h"
 #include <thread>
 #include <chrono>
 #include <cstdlib>
 
-class DeviceA : public Device {
-public:
-    std::string getName() override;
-    std::string getDataAsString() override;
-};
+std::string DeviceA::getName() const {
+    return "DeviceA";
+}
 
-#endif // DEVICEA_H
+std::string DeviceA::getDataAsString() {
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    return std::string(rand() % 501, 'A');
+}

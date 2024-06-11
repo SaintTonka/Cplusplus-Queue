@@ -96,7 +96,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -171,56 +171,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Test_Devices
+# Target rules for targets named my_project
 
 # Build rule for target.
-Test_Devices: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_Devices
-.PHONY : Test_Devices
+my_project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 my_project
+.PHONY : my_project
 
 # fast build rule for target.
-Test_Devices/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Devices.dir\build.make test/CMakeFiles/Test_Devices.dir/build
-.PHONY : Test_Devices/fast
-
-#=============================================================================
-# Target rules for targets named Test_EventQueue
-
-# Build rule for target.
-Test_EventQueue: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_EventQueue
-.PHONY : Test_EventQueue
-
-# fast build rule for target.
-Test_EventQueue/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_EventQueue.dir\build.make test/CMakeFiles/Test_EventQueue.dir/build
-.PHONY : Test_EventQueue/fast
-
-#=============================================================================
-# Target rules for targets named Test_Events
-
-# Build rule for target.
-Test_Events: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_Events
-.PHONY : Test_Events
-
-# fast build rule for target.
-Test_Events/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Events.dir\build.make test/CMakeFiles/Test_Events.dir/build
-.PHONY : Test_Events/fast
-
-#=============================================================================
-# Target rules for targets named Test_Parser
-
-# Build rule for target.
-Test_Parser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test_Parser
-.PHONY : Test_Parser
-
-# fast build rule for target.
-Test_Parser/fast:
-	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Parser.dir\build.make test/CMakeFiles/Test_Parser.dir/build
-.PHONY : Test_Parser/fast
+my_project/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\my_project.dir\build.make src/CMakeFiles/my_project.dir/build
+.PHONY : my_project/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -232,7 +193,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -245,7 +206,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -258,7 +219,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -271,8 +232,73 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named DeviceATest.cpp
+
+# Build rule for target.
+DeviceATest.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DeviceATest.cpp
+.PHONY : DeviceATest.cpp
+
+# fast build rule for target.
+DeviceATest.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\DeviceATest.cpp.dir\build.make test/CMakeFiles/DeviceATest.cpp.dir/build
+.PHONY : DeviceATest.cpp/fast
+
+#=============================================================================
+# Target rules for targets named DeviceBTest.cpp
+
+# Build rule for target.
+DeviceBTest.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DeviceBTest.cpp
+.PHONY : DeviceBTest.cpp
+
+# fast build rule for target.
+DeviceBTest.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\DeviceBTest.cpp.dir\build.make test/CMakeFiles/DeviceBTest.cpp.dir/build
+.PHONY : DeviceBTest.cpp/fast
+
+#=============================================================================
+# Target rules for targets named EventQueueTest.cpp
+
+# Build rule for target.
+EventQueueTest.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EventQueueTest.cpp
+.PHONY : EventQueueTest.cpp
+
+# fast build rule for target.
+EventQueueTest.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\EventQueueTest.cpp.dir\build.make test/CMakeFiles/EventQueueTest.cpp.dir/build
+.PHONY : EventQueueTest.cpp/fast
+
+#=============================================================================
+# Target rules for targets named EventsTest.cpp
+
+# Build rule for target.
+EventsTest.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EventsTest.cpp
+.PHONY : EventsTest.cpp
+
+# fast build rule for target.
+EventsTest.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\EventsTest.cpp.dir\build.make test/CMakeFiles/EventsTest.cpp.dir/build
+.PHONY : EventsTest.cpp/fast
+
+#=============================================================================
+# Target rules for targets named ParserTest.cpp
+
+# Build rule for target.
+ParserTest.cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ParserTest.cpp
+.PHONY : ParserTest.cpp
+
+# fast build rule for target.
+ParserTest.cpp/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\ParserTest.cpp.dir\build.make test/CMakeFiles/ParserTest.cpp.dir/build
+.PHONY : ParserTest.cpp/fast
 
 # Help Target
 help:
@@ -287,14 +313,16 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Test_Devices
-	@echo ... Test_EventQueue
-	@echo ... Test_Events
-	@echo ... Test_Parser
+	@echo ... DeviceATest.cpp
+	@echo ... DeviceBTest.cpp
+	@echo ... EventQueueTest.cpp
+	@echo ... EventsTest.cpp
+	@echo ... ParserTest.cpp
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... my_project
 .PHONY : help
 
 

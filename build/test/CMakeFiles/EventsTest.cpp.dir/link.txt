@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\EventsTest.cpp.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\EventsTest.cpp.dir/objects.a @CMakeFiles\EventsTest.cpp.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\EventsTest.cpp.dir/objects.a -Wl,--no-whole-archive -o EventsTest.cpp.exe -Wl,--out-implib,libEventsTest.cpp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EventsTest.cpp.dir\linkLibs.rsp

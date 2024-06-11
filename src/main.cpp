@@ -2,7 +2,7 @@
 #include "DeviceA.h"
 #include "DeviceB.h"
 #include "EventQueue.h"
-#include "Parser.h"
+#include "Parser.h" 
 #include <memory>
 
 int main() {

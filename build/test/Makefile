@@ -96,7 +96,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -171,156 +171,74 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/Test_Devices.dir/rule:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/Test_Devices.dir/rule
-.PHONY : test/CMakeFiles/Test_Devices.dir/rule
+test/CMakeFiles/DeviceATest.cpp.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/DeviceATest.cpp.dir/rule
+.PHONY : test/CMakeFiles/DeviceATest.cpp.dir/rule
 
 # Convenience name for target.
-Test_Devices: test/CMakeFiles/Test_Devices.dir/rule
-.PHONY : Test_Devices
+DeviceATest.cpp: test/CMakeFiles/DeviceATest.cpp.dir/rule
+.PHONY : DeviceATest.cpp
 
 # fast build rule for target.
-Test_Devices/fast:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Devices.dir\build.make test/CMakeFiles/Test_Devices.dir/build
-.PHONY : Test_Devices/fast
+DeviceATest.cpp/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\DeviceATest.cpp.dir\build.make test/CMakeFiles/DeviceATest.cpp.dir/build
+.PHONY : DeviceATest.cpp/fast
 
 # Convenience name for target.
-test/CMakeFiles/Test_EventQueue.dir/rule:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/Test_EventQueue.dir/rule
-.PHONY : test/CMakeFiles/Test_EventQueue.dir/rule
+test/CMakeFiles/DeviceBTest.cpp.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/DeviceBTest.cpp.dir/rule
+.PHONY : test/CMakeFiles/DeviceBTest.cpp.dir/rule
 
 # Convenience name for target.
-Test_EventQueue: test/CMakeFiles/Test_EventQueue.dir/rule
-.PHONY : Test_EventQueue
+DeviceBTest.cpp: test/CMakeFiles/DeviceBTest.cpp.dir/rule
+.PHONY : DeviceBTest.cpp
 
 # fast build rule for target.
-Test_EventQueue/fast:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_EventQueue.dir\build.make test/CMakeFiles/Test_EventQueue.dir/build
-.PHONY : Test_EventQueue/fast
+DeviceBTest.cpp/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\DeviceBTest.cpp.dir\build.make test/CMakeFiles/DeviceBTest.cpp.dir/build
+.PHONY : DeviceBTest.cpp/fast
 
 # Convenience name for target.
-test/CMakeFiles/Test_Events.dir/rule:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/Test_Events.dir/rule
-.PHONY : test/CMakeFiles/Test_Events.dir/rule
+test/CMakeFiles/EventQueueTest.cpp.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/EventQueueTest.cpp.dir/rule
+.PHONY : test/CMakeFiles/EventQueueTest.cpp.dir/rule
 
 # Convenience name for target.
-Test_Events: test/CMakeFiles/Test_Events.dir/rule
-.PHONY : Test_Events
+EventQueueTest.cpp: test/CMakeFiles/EventQueueTest.cpp.dir/rule
+.PHONY : EventQueueTest.cpp
 
 # fast build rule for target.
-Test_Events/fast:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Events.dir\build.make test/CMakeFiles/Test_Events.dir/build
-.PHONY : Test_Events/fast
+EventQueueTest.cpp/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\EventQueueTest.cpp.dir\build.make test/CMakeFiles/EventQueueTest.cpp.dir/build
+.PHONY : EventQueueTest.cpp/fast
 
 # Convenience name for target.
-test/CMakeFiles/Test_Parser.dir/rule:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/Test_Parser.dir/rule
-.PHONY : test/CMakeFiles/Test_Parser.dir/rule
+test/CMakeFiles/EventsTest.cpp.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/EventsTest.cpp.dir/rule
+.PHONY : test/CMakeFiles/EventsTest.cpp.dir/rule
 
 # Convenience name for target.
-Test_Parser: test/CMakeFiles/Test_Parser.dir/rule
-.PHONY : Test_Parser
+EventsTest.cpp: test/CMakeFiles/EventsTest.cpp.dir/rule
+.PHONY : EventsTest.cpp
 
 # fast build rule for target.
-Test_Parser/fast:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Parser.dir\build.make test/CMakeFiles/Test_Parser.dir/build
-.PHONY : Test_Parser/fast
+EventsTest.cpp/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\EventsTest.cpp.dir\build.make test/CMakeFiles/EventsTest.cpp.dir/build
+.PHONY : EventsTest.cpp/fast
 
-Test_Devices.obj: Test_Devices.cpp.obj
-.PHONY : Test_Devices.obj
+# Convenience name for target.
+test/CMakeFiles/ParserTest.cpp.dir/rule:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test/CMakeFiles/ParserTest.cpp.dir/rule
+.PHONY : test/CMakeFiles/ParserTest.cpp.dir/rule
 
-# target to build an object file
-Test_Devices.cpp.obj:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Devices.dir\build.make test/CMakeFiles/Test_Devices.dir/Test_Devices.cpp.obj
-.PHONY : Test_Devices.cpp.obj
+# Convenience name for target.
+ParserTest.cpp: test/CMakeFiles/ParserTest.cpp.dir/rule
+.PHONY : ParserTest.cpp
 
-Test_Devices.i: Test_Devices.cpp.i
-.PHONY : Test_Devices.i
-
-# target to preprocess a source file
-Test_Devices.cpp.i:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Devices.dir\build.make test/CMakeFiles/Test_Devices.dir/Test_Devices.cpp.i
-.PHONY : Test_Devices.cpp.i
-
-Test_Devices.s: Test_Devices.cpp.s
-.PHONY : Test_Devices.s
-
-# target to generate assembly for a file
-Test_Devices.cpp.s:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Devices.dir\build.make test/CMakeFiles/Test_Devices.dir/Test_Devices.cpp.s
-.PHONY : Test_Devices.cpp.s
-
-Test_EventQueue.obj: Test_EventQueue.cpp.obj
-.PHONY : Test_EventQueue.obj
-
-# target to build an object file
-Test_EventQueue.cpp.obj:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_EventQueue.dir\build.make test/CMakeFiles/Test_EventQueue.dir/Test_EventQueue.cpp.obj
-.PHONY : Test_EventQueue.cpp.obj
-
-Test_EventQueue.i: Test_EventQueue.cpp.i
-.PHONY : Test_EventQueue.i
-
-# target to preprocess a source file
-Test_EventQueue.cpp.i:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_EventQueue.dir\build.make test/CMakeFiles/Test_EventQueue.dir/Test_EventQueue.cpp.i
-.PHONY : Test_EventQueue.cpp.i
-
-Test_EventQueue.s: Test_EventQueue.cpp.s
-.PHONY : Test_EventQueue.s
-
-# target to generate assembly for a file
-Test_EventQueue.cpp.s:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_EventQueue.dir\build.make test/CMakeFiles/Test_EventQueue.dir/Test_EventQueue.cpp.s
-.PHONY : Test_EventQueue.cpp.s
-
-Test_Events.obj: Test_Events.cpp.obj
-.PHONY : Test_Events.obj
-
-# target to build an object file
-Test_Events.cpp.obj:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Events.dir\build.make test/CMakeFiles/Test_Events.dir/Test_Events.cpp.obj
-.PHONY : Test_Events.cpp.obj
-
-Test_Events.i: Test_Events.cpp.i
-.PHONY : Test_Events.i
-
-# target to preprocess a source file
-Test_Events.cpp.i:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Events.dir\build.make test/CMakeFiles/Test_Events.dir/Test_Events.cpp.i
-.PHONY : Test_Events.cpp.i
-
-Test_Events.s: Test_Events.cpp.s
-.PHONY : Test_Events.s
-
-# target to generate assembly for a file
-Test_Events.cpp.s:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Events.dir\build.make test/CMakeFiles/Test_Events.dir/Test_Events.cpp.s
-.PHONY : Test_Events.cpp.s
-
-Test_Parser.obj: Test_Parser.cpp.obj
-.PHONY : Test_Parser.obj
-
-# target to build an object file
-Test_Parser.cpp.obj:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Parser.dir\build.make test/CMakeFiles/Test_Parser.dir/Test_Parser.cpp.obj
-.PHONY : Test_Parser.cpp.obj
-
-Test_Parser.i: Test_Parser.cpp.i
-.PHONY : Test_Parser.i
-
-# target to preprocess a source file
-Test_Parser.cpp.i:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Parser.dir\build.make test/CMakeFiles/Test_Parser.dir/Test_Parser.cpp.i
-.PHONY : Test_Parser.cpp.i
-
-Test_Parser.s: Test_Parser.cpp.s
-.PHONY : Test_Parser.s
-
-# target to generate assembly for a file
-Test_Parser.cpp.s:
-	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\Test_Parser.dir\build.make test/CMakeFiles/Test_Parser.dir/Test_Parser.cpp.s
-.PHONY : Test_Parser.cpp.s
+# fast build rule for target.
+ParserTest.cpp/fast:
+	cd /d C:\Users\danii\Desktop\Cplusplus-Queue\build && $(MAKE) $(MAKESILENT) -f test\CMakeFiles\ParserTest.cpp.dir\build.make test/CMakeFiles/ParserTest.cpp.dir/build
+.PHONY : ParserTest.cpp/fast
 
 # Help Target
 help:
@@ -335,22 +253,11 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... Test_Devices
-	@echo ... Test_EventQueue
-	@echo ... Test_Events
-	@echo ... Test_Parser
-	@echo ... Test_Devices.obj
-	@echo ... Test_Devices.i
-	@echo ... Test_Devices.s
-	@echo ... Test_EventQueue.obj
-	@echo ... Test_EventQueue.i
-	@echo ... Test_EventQueue.s
-	@echo ... Test_Events.obj
-	@echo ... Test_Events.i
-	@echo ... Test_Events.s
-	@echo ... Test_Parser.obj
-	@echo ... Test_Parser.i
-	@echo ... Test_Parser.s
+	@echo ... DeviceATest.cpp
+	@echo ... DeviceBTest.cpp
+	@echo ... EventQueueTest.cpp
+	@echo ... EventsTest.cpp
+	@echo ... ParserTest.cpp
 .PHONY : help
 
 
