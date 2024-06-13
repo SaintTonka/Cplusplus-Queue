@@ -12,4 +12,4 @@ public:
     std::string getDataAsString() override;
 };
 
-#endif // DEVICEA_H
+#endif 

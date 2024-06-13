@@ -7,8 +7,6 @@
 
 
 
-using namespace std;
-
 Parser::Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B)
   : queue(queue), A(A), B(B) {}
 
@@ -37,7 +35,7 @@ void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, in
         loop_count_B--;
       }
       if (loop_count_A == 0 && loop_count_B == 0) {
-        cout << "All data received. Exiting..." << endl;
+        std::cout << "All data received. Exiting..." << std::endl;
         break;
       }
     }
@@ -51,11 +49,11 @@ void Parser::read(std::shared_ptr<Device> device, std::chrono::seconds sleep_dur
     queue->push(std::make_shared<StartedEvent>(device));
     for (size_t i = 0; i < loop_count; ++i) {
         if (static_cast<int>(i) == crush_index) {
-            cout << "Device " << device->getName() << " has stopped responding." << endl; // Здесь все работает
+            std::cout << "Device " << device->getName() << " has stopped responding." << std::endl; 
             continue;
         }
     std::this_thread::sleep_for(sleep_duration);
-    string data = device->getDataAsString();
+    std::string data = device->getDataAsString();
     queue->push(std::make_shared<DataEvent>(device, data));
   }
   queue->push(std::make_shared<WorkDoneEvent>(device));
