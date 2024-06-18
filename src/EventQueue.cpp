@@ -13,7 +13,7 @@ void EventQueue::push(const std::shared_ptr<const Event>& event) {
 
 std::shared_ptr<const Event> EventQueue::pop(const std::chrono::seconds& duration) {
   std::unique_lock<std::mutex> lock(mutex);
-  if (cv.wait_for(lock, duration, [this] { return !queue.empty(); })) {
+  if (cv.wait_for(lock, duration, [this] { return !queue.empty(); })) { //состояние очереди перед блокировкой 
     auto event = queue.front();
     queue.pop();
     return event;
