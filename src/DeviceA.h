@@ -8,7 +8,7 @@
 
 class DeviceA : public Device {
 public:
-    std::string getName() const override;  
+    std::string getName() const override;
     std::string getDataAsString() override;
 };
 
