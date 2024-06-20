@@ -10,3 +10,4 @@ std::string DeviceA::getName() const {
 std::string DeviceA::getDataAsString() {
     std::this_thread::sleep_for(std::chrono::seconds(1));
     return std::string(rand() % 501, 'A'); 
+}
