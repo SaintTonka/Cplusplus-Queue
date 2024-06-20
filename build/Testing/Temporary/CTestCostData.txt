@@ -1,6 +1,8 @@
-DeviceATest.cpp 3 0.00274167
-DeviceBTest.cpp 3 0.0026401
-EventQueueTest.cpp 3 0.00257027
-EventsTest.cpp 3 0.00269553
-ParserTest.cpp 3 0.00253493
+Test_Devices 0 0
+Test_EventQueue 1 1.06972
+Test_Events 0 0
+Test_Parser 0 0
 ---
+Test_Devices
+Test_Events
+Test_Parser

@@ -1,0 +1,10 @@
+^C:\USERS\DANII\DESKTOP\CPLUSPLUS-QUEUE\GOOGLETEST\GOOGLETEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/danii/Desktop/Cplusplus-Queue -BC:/Users/danii/Desktop/Cplusplus-Queue/build --check-stamp-file C:/Users/danii/Desktop/Cplusplus-Queue/build/googletest/googletest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

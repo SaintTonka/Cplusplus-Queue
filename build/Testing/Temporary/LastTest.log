@@ -1,98 +1,51 @@
-Start testing: Jun 11 16:19 RTZ 2 (çèìà)
+Start testing: Jun 20 14:45 RTZ 2 (çèìà)
 ----------------------------------------------------------
-1/5 Testing: DeviceATest.cpp
-1/5 Test: DeviceATest.cpp
-Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceATest.cpp.exe"
+Test not available without configuration.  (Missing "-C <config>"?)
+1/4 Testing: Test_Devices
+1/4 Test: Test_Devices
+Command: "NOT_AVAILABLE"
 Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
-"DeviceATest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+"Test_Devices" start time: 
 Output:
 ----------------------------------------------------------
-Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DeviceATest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
-"DeviceATest.cpp" time elapsed: 00:00:00
+"Test_Devices" end time: Jun 20 14:45 RTZ 2 (çèìà)
+"Test_Devices" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/5 Testing: DeviceBTest.cpp
-2/5 Test: DeviceBTest.cpp
-Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/DeviceBTest.cpp.exe"
+Test not available without configuration.  (Missing "-C <config>"?)
+3/4 Testing: Test_Events
+3/4 Test: Test_Events
+Command: "NOT_AVAILABLE"
 Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
-"DeviceBTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+"Test_Events" start time: 
 Output:
 ----------------------------------------------------------
-Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"DeviceBTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
-"DeviceBTest.cpp" time elapsed: 00:00:00
+"Test_Events" end time: Jun 20 14:45 RTZ 2 (çèìà)
+"Test_Events" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/5 Testing: EventQueueTest.cpp
-3/5 Test: EventQueueTest.cpp
-Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventQueueTest.cpp.exe"
+Test not available without configuration.  (Missing "-C <config>"?)
+4/4 Testing: Test_Parser
+4/4 Test: Test_Parser
+Command: "NOT_AVAILABLE"
 Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
-"EventQueueTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
+"Test_Parser" start time: 
 Output:
 ----------------------------------------------------------
-Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"EventQueueTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
-"EventQueueTest.cpp" time elapsed: 00:00:00
+"Test_Parser" end time: Jun 20 14:45 RTZ 2 (çèìà)
+"Test_Parser" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/5 Testing: EventsTest.cpp
-4/5 Test: EventsTest.cpp
-Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/EventsTest.cpp.exe"
-Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
-"EventsTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
-Output:
-----------------------------------------------------------
-Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"EventsTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
-"EventsTest.cpp" time elapsed: 00:00:00
-----------------------------------------------------------
-
-5/5 Testing: ParserTest.cpp
-5/5 Test: ParserTest.cpp
-Command: "C:/Users/danii/Desktop/Cplusplus-Queue/build/test/ParserTest.cpp.exe"
-Directory: C:/Users/danii/Desktop/Cplusplus-Queue/build/test
-"ParserTest.cpp" start time: Jun 11 16:19 RTZ 2 (çèìà)
-Output:
-----------------------------------------------------------
-Running main() from C:\Users\danii\Desktop\Cplusplus-Queue\googletest\googletest\src\gtest_main.cc
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"ParserTest.cpp" end time: Jun 11 16:19 RTZ 2 (çèìà)
-"ParserTest.cpp" time elapsed: 00:00:00
-----------------------------------------------------------
-
-End testing: Jun 11 16:19 RTZ 2 (çèìà)
+End testing: Jun 20 14:45 RTZ 2 (çèìà)
