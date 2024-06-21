@@ -4,11 +4,10 @@
 #include <cstdlib>
 
 std::string DeviceA::getName() const {
-    return "DeviceA_Mock";
+    return "DeviceA";
 }
-
 
 std::string DeviceA::getDataAsString() {
     std::this_thread::sleep_for(std::chrono::seconds(1));
-    return std::string("DeviceA_Mock_Data"); 
+    return std::string(rand() % 501, 'A'); 
 }

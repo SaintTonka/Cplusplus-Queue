@@ -2,14 +2,12 @@
 #define DEVICEA_H
 
 #include "Device.h"
-#include <thread>
-#include <chrono>
-#include <cstdlib>
+#include <string>
 
 class DeviceA : public Device {
 public:
-    std::string getName() const override;
+    std::string getName() const override;  
     std::string getDataAsString() override;
 };
 
-#endif 
+#endif

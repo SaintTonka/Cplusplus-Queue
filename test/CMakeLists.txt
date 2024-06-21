@@ -19,3 +19,4 @@ foreach(test_source ${TEST_SOURCES})
     target_link_libraries(${test_name} gtest gtest_main my_project)
     add_test(NAME ${test_name} COMMAND ${test_name})
 endforeach()
+
