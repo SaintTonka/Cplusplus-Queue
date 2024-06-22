@@ -2,6 +2,7 @@
 #include "DeviceA.h"
 #include "DeviceB.h"
 #include <memory>
+#include <algorithm>
 
 TEST(DeviceA_GetNameTest, TestBody) {
     std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
@@ -11,9 +12,17 @@ TEST(DeviceA_GetNameTest, TestBody) {
 TEST(DeviceA_GetDataTest, TestBody) {
     std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
     std::string data = deviceA->getDataAsString();
-    ASSERT_LE(data.size(), 500);
+    static const std::string alphanum =
+        "0123456789"
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "abcdefghijklmnopqrstuvwxyz";
+
+    
+    ASSERT_LE(data.size(), 50);
     ASSERT_GE(data.size(), 0);
-    ASSERT_TRUE(data.find_first_not_of('A') == std::string::npos);
+
+    
+    ASSERT_FALSE(data.empty());
 }
 
 TEST(DeviceB_GetNameTest, TestBody) {

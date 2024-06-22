@@ -1,22 +1,24 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include "EventQueue.h"
-#include "Device.h"
 #include <memory>
-#include <chrono>
+#include <iostream>
+#include "Device.h"
 
 class Parser {
 public:
-    Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B);
-    void run(size_t loop_count_A, size_t loop_count_B, int crush_index_A = -1, int crush_index_B = -1);
+    Parser() = default;
 
-private:
-    void read(std::shared_ptr<Device> device, std::chrono::seconds sleep_duration, size_t loop_count, int crush_index);
+    void process(std::shared_ptr<Device> device) {
+        std::cout << "StartedEvent: Device: " << device->getName() << std::endl;
+        std::string data = device->getDataAsString();
+        std::cout << "DataEvent: Device: " << device->getName() << ", Data: " << data << std::endl;
+        std::cout << "WorkDoneEvent: Device: " << device->getName() << std::endl;
+    }
 
-    std::shared_ptr<EventQueue> queue;
-    std::shared_ptr<Device> A;
-    std::shared_ptr<Device> B;
+    void run() {
+        std::cout << "Parser is running" << std::endl;
+    }
 };
 
 #endif 

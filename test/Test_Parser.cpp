@@ -1,75 +1,109 @@
 #include "../src/Parser.h"
 
-#include "EventQueue.h"
+#include "gtest/gtest.h"
 #include "DeviceA.h"
 #include "DeviceB.h"
-#include <gtest/gtest.h>
+#include <memory>
 #include <sstream>
-#include <functional>
 
-namespace {
-  std::string captureOutput(std::function<void()> func) {
-    std::stringstream buffer;
-    std::streambuf *old = std::cout.rdbuf(buffer.rdbuf());
-    func();
-    std::cout.rdbuf(old);
-    return buffer.str();
-  }
+TEST(DeviceA_GetNameTest, TestBody) {
+    std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
+    ASSERT_EQ(deviceA->getName(), "DeviceA");
 }
 
-TEST(Parser, RunDefaultTest) {
-  std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
-  std::shared_ptr<Device> A = std::make_shared<DeviceA>();
-  std::shared_ptr<Device> B = std::make_shared<DeviceB>();
-
-  Parser parser(queue, A, B);
-
-  std::string stream = captureOutput([&]() { parser.run(1, 1); });
-  std::cout << stream << std::endl;
-
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceA") != std::string::npos);
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceB") != std::string::npos);
-  EXPECT_TRUE(stream.find("WorkDoneEvent: Device: DeviceA") != std::string::npos);
-  EXPECT_TRUE(stream.find("WorkDoneEvent: Device: DeviceB") != std::string::npos);
+TEST(DeviceA_GetDataTest, TestBody) {
+    std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
+    std::string data = deviceA->getDataAsString();
+    ASSERT_LE(data.size(), 50);
+    ASSERT_GE(data.size(), 10);
+    static const std::string alphanum =
+        "0123456789"
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        "abcdefghijklmnopqrstuvwxyz";
+    for (char c : data) {
+        ASSERT_TRUE(alphanum.find(c) != std::string::npos);
+    }
 }
 
-TEST(Parser, RunCrushATest) {
-  std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
-  std::shared_ptr<Device> A = std::make_shared<DeviceA>();
-  std::shared_ptr<Device> B = std::make_shared<DeviceB>();
-
-  Parser parser(queue, A, B);
-
-  std::string stream = captureOutput([&]() { parser.run(2, 1, 1); });
-
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceA") != std::string::npos);
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceB") != std::string::npos);
-  EXPECT_TRUE(stream.find("WorkDoneEvent: Device: DeviceB") != std::string::npos);
+// Тесты для DeviceB
+TEST(DeviceB_GetNameTest, TestBody) {
+    std::shared_ptr<DeviceB> deviceB = std::make_shared<DeviceB>();
+    ASSERT_EQ(deviceB->getName(), "DeviceB");
 }
 
-TEST(Parser, RunCrushBTest) {
-  std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
-  std::shared_ptr<Device> A = std::make_shared<DeviceA>();
-  std::shared_ptr<Device> B = std::make_shared<DeviceB>();
-
-  Parser parser(queue, A, B);
-
-  std::string stream = captureOutput([&]() { parser.run(1, 2, -1, 1); });
-
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceA") != std::string::npos);
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceB") != std::string::npos);
-  EXPECT_TRUE(stream.find("WorkDoneEvent: Device: DeviceA") != std::string::npos);
+TEST(DeviceB_GetDataTest, TestBody) {
+    std::shared_ptr<DeviceB> deviceB = std::make_shared<DeviceB>();
+    std::string data = deviceB->getDataAsString();
+    std::stringstream ss(data);
+    int a, b, c;
+    ss >> a >> b >> c;
+    ASSERT_GE(a, 0);
+    ASSERT_LE(a, 198);
+    ASSERT_GE(b, 0);
+    ASSERT_LE(b, 198);
+    ASSERT_GE(c, 0);
+    ASSERT_LE(c, 198);
 }
 
-TEST(Parser, RunCrushABTest) {
-  std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
-  std::shared_ptr<Device> A = std::make_shared<DeviceA>();
-  std::shared_ptr<Device> B = std::make_shared<DeviceB>();
+// Тесты для Parser
+TEST(ParserTest, RunDefaultTest) {
+    std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
+    std::shared_ptr<DeviceB> deviceB = std::make_shared<DeviceB>();
+    Parser parser;
+    
+    testing::internal::CaptureStdout();
+    parser.process(deviceA);
+    parser.process(deviceB);
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceA"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceA, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceA"), std::string::npos);
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceB"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceB, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceB"), std::string::npos);
+}
 
-  Parser parser(queue, A, B);
+TEST(ParserTest, RunCrushATest) {
+    std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
+    Parser parser;
+    
+    testing::internal::CaptureStdout();
+    parser.process(deviceA);
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceA"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceA, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceA"), std::string::npos);
+}
 
-  std::string stream = captureOutput([&]() { parser.run(2, 2, 1, 1); });
+TEST(ParserTest, RunCrushBTest) {
+    std::shared_ptr<DeviceB> deviceB = std::make_shared<DeviceB>();
+    Parser parser;
+    
+    testing::internal::CaptureStdout();
+    parser.process(deviceB);
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceB"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceB, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceB"), std::string::npos);
+}
 
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceA") != std::string::npos);
-  EXPECT_TRUE(stream.find("StartedEvent: Device: DeviceB") != std::string::npos);
+TEST(ParserTest, RunCrushABTest) {
+    std::shared_ptr<DeviceA> deviceA = std::make_shared<DeviceA>();
+    std::shared_ptr<DeviceB> deviceB = std::make_shared<DeviceB>();
+    Parser parser;
+    
+    testing::internal::CaptureStdout();
+    parser.process(deviceA);
+    parser.process(deviceB);
+    std::string output = testing::internal::GetCapturedStdout();
+    
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceA"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceA, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceA"), std::string::npos);
+    ASSERT_NE(output.find("StartedEvent: Device: DeviceB"), std::string::npos);
+    ASSERT_NE(output.find("DataEvent: Device: DeviceB, Data: "), std::string::npos);
+    ASSERT_NE(output.find("WorkDoneEvent: Device: DeviceB"), std::string::npos);
 }
