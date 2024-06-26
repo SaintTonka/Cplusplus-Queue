@@ -9,7 +9,7 @@ std::string DeviceB::getName() const {
 }
 
 std::string DeviceB::getDataAsString() {
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(5));
     int a = rand() % 199;
     int b = rand() % 199;
     int c = rand() % 199;
